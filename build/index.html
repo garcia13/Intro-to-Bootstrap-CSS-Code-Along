@@ -6,7 +6,12 @@
     <!-- ************************** -->
     <!-- add link to bootstrap here -->
     <!-- ************************** -->
-
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
     <!-- ************************** -->
     <!-- Make sure bootstrap link is before your own stylesheets -->
     <!-- ************************** -->
@@ -76,7 +81,7 @@
     <!-- Set id hero on div for hero/jump image -->
     <!-- ************************** -->
 
-    <div class="" id="">
+    <div class="container-fluid" id="hero">
       <img
         src="../assets/lauza-loistl-pkFo3Lm-d0s-unsplash.jpg"
         class="img-fluid"
@@ -102,14 +107,14 @@
     <!-- Set class display-4 on h3 for Just Restocked -->
     <!-- ************************** -->
 
-    <div class="">
-      <h3 class="">Just Restocked</h3>
+    <div class="container">
+      <h3 class="display-4">Just Restocked</h3>
 
       <!-- ************************** -->
       <!-- Begin row of cards -->
       <!-- Set class row  on div for Just Restocked -->
       <!-- ************************** -->
-      <div class="">
+      <div class="row">
         <!-- ************************** -->
         <!-- First card -->
         <!-- Set classes card col on outer div -->
@@ -119,15 +124,15 @@
         <!-- Set classes btn btn-primary on a tag -->
         <!-- ************************** -->
 
-        <div class="" style="width: 18rem">
+        <div class="card col" style="width: 18rem">
           <img
             src="../assets/anastasia-zhenina-3YiZ0B2W8c0-unsplash.jpg"
             class="card-img-top"
             alt="Yellow rose"
           />
-          <div class="">
-            <h5 class="">Yellow</h5>
-            <p class="">A perennial showstopper!</p>
+          <div class="card-body">
+            <h5 class="card-titile">Yellow</h5>
+            <p class="card-text">A perennial showstopper!</p>
             <p>
               <span
                 >Photo by
@@ -143,7 +148,7 @@
               </span>
             </p>
             <br />
-            <a href="#" class="">Gift it</a>
+            <a href="#" class="btn btn-primary">Gift it</a>
           </div>
         </div>
 
@@ -218,9 +223,9 @@
       <!-- Set classes table table-striped table-hover text-center on table -->
       <!-- ************************** -->
 
-      <h3 class="">Best Sellers</h3>
+      <h3 class="display-5">Best Sellers</h3>
 
-      <table class="">
+      <table class="table table-striped table-hover text-center">
         <thead>
           <tr>
             <th scope="col">#</th>
@@ -268,7 +273,7 @@
       <!-- Set class container on div -->
       <!-- ************************** -->
 
-      <div class="">
+      <div class="container">
         <h4>Sign up for our newsletter</h4>
         <form>
           <!-- ************************** -->
@@ -277,28 +282,30 @@
           <!-- Set class mb-3 for inner div div -->
           <!-- ************************** -->
 
-          <div class="">
-            <div class="">
+          <div class="mb-3">
+            <div class="mb-3">
               <!-- ************************** -->
               <!-- Labels & for Text inputs -->
               <!-- Set class form-label for label -->
               <!-- Set class form-control for input -->
               <!-- ************************** -->
-              <label for="name" class="">Name</label>
-              <input type="text" class="" id="name" />
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" />
             </div>
             <!-- ************************** -->
             <!-- Labels & for Text inputs -->
             <!-- Set class form-text for div -->
             <!-- ************************** -->
-            <label for="exampleInputEmail1" class="">Email address</label>
+            <label for="exampleInputEmail1" class="form-label"
+              >Email address</label
+            >
             <input
               type="email"
-              class=""
+              class="form-control"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
             />
-            <div id="emailHelp" class="">
+            <div id="emailHelp" class="mb-3">
               No trees will be harmed in delivering our newsletters
             </div>
           </div>
@@ -310,9 +317,13 @@
           <!-- Set class form-check-label on label -->
           <!-- ************************** -->
 
-          <div class="">
-            <input type="checkbox" class="" id="exampleCheck1" />
-            <label class="" for="exampleCheck1"
+          <div class="mb-3">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
+            />
+            <label class="form-check-label" for="exampleCheck1"
               >Send me promo codes daily!</label
             >
           </div>
@@ -323,7 +334,7 @@
           <!-- ************************** -->
 
           <p>Select frequency of newsletters</p>
-          <select class="" aria-label="Default weekly">
+          <select class="form-select" aria-label="Default weekly">
             <option selected>Weekly</option>
             <option value="1">Daily</option>
             <option value="2">Hourly</option>
@@ -336,9 +347,9 @@
           <!-- Set class form-check-label on label -->
           <!-- ************************** -->
 
-          <div class="">
+          <div class="form-check form-switch">
             <input
-              class=""
+              class="form-check-input"
               type="checkbox"
               id="flexSwitchCheckDefault"
               checked
@@ -348,7 +359,7 @@
             >
           </div>
           <!-- Set classes btn btn-primary -->
-          <button type="submit" class="">Submit</button>
+          <button type="submit" class="btn btn-primary">Submit</button>
         </form>
         <br />
       </div>
